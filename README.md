@@ -28,6 +28,7 @@
 
 <strong>Obs: </strong>Caso queira criar um repositório no Git, por favor informar o URL para clonagem.<br>
 - [x] Feito [Repositório do Desafio/Teste](https://github.com/hscosta/sistema-loc-veic.git)
+- [x] Aplicação rodando / feito deploy [aqui](https://app-loc-veiculos-g3.herokuapp.com/)
 <hr>
 Objetivo:
 Analisar as capacidades técnicas.
