@@ -5,10 +5,10 @@
 - O candidato deve elaborar um sistema para atender uma locadora de veículos.
 
 #### 1) A interface deve ter as seguintes funcionalidades:
-- [ ] Cadastro de veículos
-- [ ] Cadastro de clientes
-- [ ] Solicitação locação de veículos
-- [ ] Fila de espera
+- [x] Cadastro de veículos
+- [x] Cadastro de clientes
+- [x] Solicitação locação de veículos
+- [x] Fila de espera
 - [ ] Histórico de locação
 - [ ] Meios de pagamento
 - [ ] Listagem de veículos / clientes.
@@ -20,7 +20,8 @@
     - [x] Não possuo domínio ainda no PHP, fiz em Python o projeto inicial, usando o framework Django
     - [x] Configurações iniciais setadas e feito deploy inicial no Heroku
 - [ ] Utilizar o padrão MVC
-- [ ] SGBD (MySQL/MariaDB ou PostgreSQL)
+- [x] SGBD (MySQL/MariaDB ou PostgreSQL)
+    - [x] PostgreSQL
 
 <hr>
 - Os arquivos devem ser anexos e enviados para análise, sendo eles:<br>
