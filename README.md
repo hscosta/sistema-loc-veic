@@ -17,6 +17,8 @@
 
 #### 3) Requisitos técnicos:
 - [ ] O Back-End deve ser desenvolvimento em PHP com ou sem Framework.
+    - [x] Não possuo domínio ainda no PHP, fiz em Python o projeto inicial, usando o framework Django
+    - [x] Configurações iniciais setadas e feito deploy inicial no Heroku
 - [ ] Utilizar o padrão MVC
 - [ ] SGBD (MySQL/MariaDB ou PostgreSQL)
 
