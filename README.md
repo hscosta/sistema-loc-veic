@@ -24,7 +24,7 @@
     - Usando a convenção MTV (Model / Template (equivalente à View) / View (equivalente ao Controller))<br><br>
 - [x] SGBD (MySQL/MariaDB ou PostgreSQL)
     - [x] PostgreSQL
-        - Foi utilizado o SQLite3 para desenvolvimento mas, ao fazer o deploy, foi migrado para uma base PostgreSQL que será enviado os dados de acesso via email para visualização da base.
+        - Foi utilizado o SQLite3 para desenvolvimento mas, ao fazer o deploy, foi migrado para uma base PostgreSQL que <strong><u>será enviado os dados de acesso via email para visualização da base</strong></u>.
 
 <hr>
 - Os arquivos devem ser anexos e enviados para análise, sendo eles:<br>
