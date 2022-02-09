@@ -16,10 +16,11 @@
 #### 2) O banco de dados deve conter os relacionamentos necessários para garantir a integridade das informações.
 
 #### 3) Requisitos técnicos:
-- [ ] O Back-End deve ser desenvolvimento em PHP com ou sem Framework.
+- [x] O Back-End deve ser desenvolvimento em PHP com ou sem Framework.
     - [x] Não possuo domínio ainda no PHP, fiz em Python o projeto inicial, usando o framework Django
     - [x] Configurações iniciais setadas e feito deploy inicial no Heroku
-- [ ] Utilizar o padrão MVC
+- [x] Utilizar o padrão MVC
+    - [x] Usando a convenção MTV (Model / Template (equivalente à View) / View (equivalente ao Controller))
 - [x] SGBD (MySQL/MariaDB ou PostgreSQL)
     - [x] PostgreSQL
 
