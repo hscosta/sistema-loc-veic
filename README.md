@@ -27,6 +27,7 @@
 <br>
 
 <strong>Obs: </strong>Caso queira criar um repositório no Git, por favor informar o URL para clonagem.<br>
+- [x] Feito [Repositório do Desafio/Teste](https://github.com/hscosta/sistema-loc-veic.git)
 <hr>
 Objetivo:
 Analisar as capacidades técnicas.
