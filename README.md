@@ -18,11 +18,13 @@
 #### 3) Requisitos técnicos:
 - [x] O Back-End deve ser desenvolvimento em PHP com ou sem Framework.
     - [x] Não possuo domínio ainda no PHP, fiz em Python o projeto inicial, usando o framework Django
-    - [x] Configurações iniciais setadas e feito deploy inicial no Heroku
+    - [x] Configurações iniciais setadas e feito deploy inicial no Heroku<br><br>
 - [x] Utilizar o padrão MVC
-    - [x] Usando a convenção MTV (Model / Template (equivalente à View) / View (equivalente ao Controller))
+
+    - Usando a convenção MTV (Model / Template (equivalente à View) / View (equivalente ao Controller))<br><br>
 - [x] SGBD (MySQL/MariaDB ou PostgreSQL)
     - [x] PostgreSQL
+        - Foi utilizado o SQLite3 para desenvolvimento mas, ao fazer o deploy, foi migrado para uma base PostgreSQL que será enviado os dados de acesso via email para visualização da base.
 
 <hr>
 - Os arquivos devem ser anexos e enviados para análise, sendo eles:<br>
