@@ -8,9 +8,9 @@
 - [x] Cadastro de veículos
 - [x] Cadastro de clientes
 - [x] Solicitação locação de veículos
+- [x] Meios de pagamento
 - [x] Fila de espera
 - [ ] Histórico de locação
-- [ ] Meios de pagamento
 - [ ] Listagem de veículos / clientes.
 
 #### 2) O banco de dados deve conter os relacionamentos necessários para garantir a integridade das informações.
