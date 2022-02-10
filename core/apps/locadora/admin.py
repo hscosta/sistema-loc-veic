@@ -39,7 +39,7 @@ class ClienteAdmin(admin.ModelAdmin):
 @admin.register(FormPag)
 class FormPagAdmin(admin.ModelAdmin):
     fields = (
-        (),
-        (),
+        ('forma'),
+        ('observacao'),
         (),
     )
