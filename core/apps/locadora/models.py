@@ -37,7 +37,8 @@ class Veiculo(models.Model):
     combustivel = models.CharField(
         max_length=50, blank=True, verbose_name='Tipo de combustível', )
     nivel_tanque = models.DecimalField(
-        max_digits=2, decimal_places=2, default=0.00, verbose_name='Nível do Tanque', )
+        max_digits=8, decimal_places=2, blank=True, 
+        verbose_name='Nível do Tanque', )
     km_atual = models.DecimalField(
         max_digits=8, blank=True, decimal_places=2, )
     disponibilidade = models.IntegerField(
@@ -120,18 +121,28 @@ class FormPag(models.Model):
         return f'{self.forma}'
 
 class Locacao(models.Model):
-    cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE, verbose_name='Nome do Cliente', )
-    veiculo = models.ForeignKey(Veiculo, on_delete=models.CASCADE, verbose_name='Veículo', )
-    datahora_locacao = models.DateTimeField(auto_now_add=True, verbose_name='Data / Hora da Locação', )
-    datahora_prevista_devolucao = models.DateTimeField(verbose_name='Data / Hora prevista p/ Devolução', )
-    datahora_devolucao = models.DateTimeField(verbose_name='Data / Hora da Devolução', )
-    valor_total = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='Valor Total R$', )
-    qtde_dias = models.IntegerField(verbose_name='Qtde. dias locados', )
-    km_devolucao = models.DecimalField(max_digits=8, decimal_places=2, verbose_name='Anotação de KM do veículo', )
+    cliente = models.ForeignKey(
+        Cliente, on_delete=models.CASCADE, verbose_name='Nome do Cliente', )
+    veiculo = models.ForeignKey(
+        Veiculo, on_delete=models.CASCADE, verbose_name='Veículo', )
+    datahora_locacao = models.DateTimeField(
+        auto_now_add=True, verbose_name='Data / Hora da Locação', )
+    datahora_prevista_devolucao = models.DateTimeField(
+        verbose_name='Data / Hora prevista p/ Devolução', )
+    datahora_devolucao = models.DateTimeField(
+        verbose_name='Data / Hora da Devolução', )
+    valor_previsto = models.DecimalField(
+        max_digits=8, decimal_places=2, default=0.00, verbose_name='Previsão R$', )
+    valor_total = models.DecimalField(
+        max_digits=8, decimal_places=2, verbose_name='Valor Total R$', )
+    qtde_dias = models.IntegerField(
+        verbose_name='Qtde. dias locados', )
+    km_devolucao = models.DecimalField(
+        max_digits=8, decimal_places=2, verbose_name='Anotação de KM do veículo', )
 
     class Meta:
         verbose_name = 'Locação'
-        verbose_name_plural = 'Locações'
+        verbose_name_plural = '4. Locações'
 
     def __str__(self):
         return f'{self.cliente.nome} - {self.veiculo.placa} - {self.veiculo.modelo}'
@@ -141,6 +152,10 @@ class Reserva(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE, )
     veiculo = models.ForeignKey(Veiculo, on_delete=models.CASCADE, )
     datahora_reserva = models.DateTimeField(null=False, )
+
+    class Meta:
+        verbose_name = 'Reserva'
+        verbose_name_plural = '5. Reservas'
 
     def __str__(self):
         return f'{self.datahora_reserva} - {self.veiculo.placa} - {self.veiculo.modelo}'

@@ -10,6 +10,10 @@ from .models import Veiculo, Cliente, Locacao, Reserva, FormPag
 
 @admin.register(Veiculo)
 class VeiculoAdmin(admin.ModelAdmin):
+    list_display = (
+        'modelo', 'placa', 'cor', 'numero_portas', 
+        'disponibilidade',
+    )
     fields = (
         ('proprietario', 'renavam'), 
         ('placa', 'chassi'), 
@@ -21,8 +25,13 @@ class VeiculoAdmin(admin.ModelAdmin):
         ('observacao'),
     )
 
+
 @admin.register(Cliente)
 class ClienteAdmin(admin.ModelAdmin):
+    list_display = (
+        'nome', 'telefone', 'celular', 'email',
+        'cnh_numero',
+    )
     fields = (
         ('tipo_pessoa'),
         ('nome'),
@@ -36,10 +45,24 @@ class ClienteAdmin(admin.ModelAdmin):
         ('senha'),
     )
 
+
 @admin.register(FormPag)
 class FormPagAdmin(admin.ModelAdmin):
+    list_display = (
+        'forma', 'observacao',
+    )
     fields = (
         ('forma'),
         ('observacao'),
         (),
     )
+
+
+@admin.register(Locacao)
+class LocacaoAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Reserva)
+class ReservaAdmin(admin.ModelAdmin):
+    pass
